@@ -4,9 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+    /* font-family: 'Outfit', sans-serif; */
+    /* font-family: 'Young Serif', serif; */
+
 }
-/* @media screen {
+/* @media screen { 
     
 .Ingredients > ul{
     list-style-type: disc !important;
@@ -15,11 +17,11 @@
 body{
     background:hsl(30, 54%, 90%);
     width: 100%;
-    height: 100%;
+    height: 100%; 
 }
 .box1{
     width: 44%;
-    height: 1200px;
+    height: 1400px;
     background: white;
     position: relative;
     padding: 1%;
@@ -28,6 +30,7 @@ body{
     display: block;
     justify-content: center;
 }
+
 .box1 img{
     width: 100%;
     height: 180px;
@@ -36,6 +39,7 @@ body{
     border-radius: 10px;
 }
 .box1 h2{
+    margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Young Serif', serif;
 }
@@ -61,10 +65,15 @@ body{
     margin-bottom: 5px;
     left: o;
     margin-left: 5%;
+    font-family: 'Outfit', sans-serif;
 }
 .box2 ul li{
     margin-left: 8%;
     margin-bottom: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+.box2 ul li::marker{
+    color: hsl(332, 51%, 32%);
 }
 /* .box22 ul::before{
     content: "\2022";
@@ -74,12 +83,15 @@ body{
     width: 100%;
     background: white;
     position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 12px;
 }
 .Ingredients h2{
     margin-left: 0.5%;
     color: hsl(332, 51%, 32%);
+    font-family: 'Young Serif', serif;
 }
 .Ingredients ul {
     margin-left: 3.5%;
@@ -87,10 +99,21 @@ body{
 .Ingredients ul li{
     margin-bottom: 10px;
     font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+.Ingredients ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.Instructions{
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
 .Instructions h2{
     margin-left: 0.5%;
     color: hsl(332, 51%, 32%);
+    margin-bottom: 20px;
+    font-family: 'Young Serif', serif;    
 }
 .Instructions ol {
     margin-left: 3.5%;
@@ -98,14 +121,71 @@ body{
 .Instructions ol li {
     margin-bottom: 10px;
     font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+.Instructions ol li::marker{
+    color: hsl(332, 51%, 32%);
 }
 .Nutrition{
     margin-top: 40px;
 }
+.Nutrition h2{
+    font-family: 'Young Serif', serif;   
+    color: hsl(332, 51%, 32%); 
+}
+.Nutrition p{
+    font-family: 'Outfit', sans-serif;
+}
 #quantity{
     color: hsl(332, 51%, 32%);
 }
-.table{
-    padding: 0 30px;
-    gap: 50px;
+.Calories {
+    /* border-bottom: 1px solid black; */
+}
+.Calories tr td{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px 215px 10px 30px;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+
+
+@media (max-width: 375px ){
+    body{
+        background: white;
+    }
+    .box1{
+        width: 100%;
+        margin: 0 0%;
+        padding: 0;
+    }
+    .box2{
+        width: 80%;
+        margin-left: 15px;
+        margin-top: 25px;
+    }
+    .box22{
+        width: 80%;
+        margin-left: 14px;
+        padding: 10px;
+    }
+    .box1 h2{
+        margin-left: 25px;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .box1 p{
+        margin-left: 25px;
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .box1 img{
+        border-radius: none;
+    }    
+    .Ingredients ul{
+        margin-left: 25px;
+
+    }
 }
