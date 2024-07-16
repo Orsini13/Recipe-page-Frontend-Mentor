@@ -4,16 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Outfit', sans-serif; */
-    /* font-family: 'Young Serif', serif; */
+}
 
-}
-/* @media screen { 
-    
-.Ingredients > ul{
-    list-style-type: disc !important;
-}
-} */
 body{
     background:hsl(30, 54%, 90%);
     width: 100%;
@@ -44,8 +36,9 @@ body{
     font-family: 'Young Serif', serif;
 }
 .box1 p{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 16px;
+    font-family: 'Outfit', sans-serif;
 }
 
 .box2{
@@ -82,10 +75,10 @@ body{
 .Ingredients{
     width: 100%;
     background: white;
-    position: relative;
+    /* position: relative; */
     margin-bottom: 20px;
     margin-top: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(199, 190, 190);
     padding-bottom: 12px;
 }
 .Ingredients h2{
@@ -105,7 +98,7 @@ body{
     color: hsl(332, 51%, 32%);
 }
 .Instructions{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(199, 190, 190);
     padding-bottom: 20px;
     margin-bottom: 10px;
 }
@@ -128,6 +121,7 @@ body{
 }
 .Nutrition{
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 .Nutrition h2{
     font-family: 'Young Serif', serif;   
@@ -136,26 +130,43 @@ body{
 .Nutrition p{
     font-family: 'Outfit', sans-serif;
 }
-#quantity{
-    color: hsl(332, 51%, 32%);
-}
-.Calories {
-    /* border-bottom: 1px solid black; */
-}
-.Calories tr td{
-    display: inline-flex;
-    justify-content: space-between;
-    margin: 10px 215px 10px 30px;
-    font-family: 'Outfit', sans-serif;
-    
-}
+
 .table{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(199, 190, 190);
+    display: flex;
+    gap: 245px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+#nutrients{
+    font-family: 'Outfit', sans-serif;
+    padding-left: 32px;
+}
+#quant{
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit', sans-serif;
+
+}
+.table2{
+    border-bottom: 1px solid rgb(199, 190, 190);
+    display: flex;
+    gap: 260px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.table3{
+    border-bottom: 1px solid rgb(199, 190, 190);
+    display: flex;
+    gap: 252px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.table4{
     display: flex;
     gap: 280px;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
-
-
 
 
 
@@ -168,31 +179,89 @@ body{
         margin: 0 0%;
         padding: 0;
     }
-    .box2{
-        width: 80%;
-        margin-left: 15px;
-        margin-top: 25px;
-    }
-    .box22{
-        width: 80%;
-        margin-left: 14px;
-        padding: 10px;
-    }
     .box1 h2{
-        margin-left: 25px;
+        margin-left: 23px;
         font-size: 30px;
         margin-top: 20px;
     }
     .box1 p{
-        margin-left: 25px;
-        margin-top: 25px;
-        font-size: 20px;
+        margin-left: 23px;
+        margin-right: 12px;
+        margin-top: 20px;
+        font-size: 16.5px;
+    }
+    .box2{
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-right: 100px;
+        padding: 15px 0px 15px 15px;  
+        background: hsl(330, 100%, 98%);
+    }
+    .box22{
+        margin-left: 0px;
+        margin-right: 10px;
+        padding: 15px 10px 15px 15px;
+        background: white;
+    }
+    .box2 h3{
+        color: hsl(332, 51%, 32%);
+        margin: 10px 0 15px 0% ;
+    }
+    .box2 ul li{
+        font-size: 15px;
+        /* margin-left: 8%; */
+        margin-right: 100px;
+        margin-bottom: 10px;
+        font-family: 'Outfit', sans-serif;
     }
     .box1 img{
         border-radius: none;
-    }    
+    }   
+    .Ingredients{
+        width: 310px;
+        margin-left: 20px;
+    } 
+    .Ingredients h2{
+      margin-left: 1px;  
+    }
     .Ingredients ul{
-        margin-left: 25px;
-
+        margin-left: 19px;
+    }
+    .Instructions{
+        width: 320px;
+        margin-left: 20px;
+    }
+    .Instructions h2{
+        margin-left: 3.5px;
+    }
+    .Instructions ol{
+        margin-right: 25px;
+    }
+    .Instructions ol li{
+        margin-left: 10px;
+    }
+    .Nutrition p{
+        margin-right: 20px;
+        margin-bottom: 0px;
+    }
+    .table{
+       gap:40px;
+       margin: 0px 24px 0 24px;
+    }  
+    #nutrients{
+        margin-left: 4px;
+    }   
+    .table2{
+        gap:55px;
+       margin: 0px 24px 0 24px;
+    }
+    .table3{
+        gap: 45px;
+       margin: 0px 24px 0 24px;
+    }
+    .table4{
+        gap: 70px;
+       margin: 0px 24px 0 24px;
+       margin-bottom: 30px;
     }
 }
