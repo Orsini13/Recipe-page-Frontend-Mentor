@@ -170,7 +170,7 @@ body{
 
 
 
-@media (max-width: 375px ){
+@media (max-width: 500px ){
     body{
         background: white;
     }
@@ -178,6 +178,7 @@ body{
         width: 100%;
         margin: 0 0%;
         padding: 0;
+        height: 2000px;
     }
     .box1 h2{
         margin-left: 23px;
