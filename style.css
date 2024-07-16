@@ -149,6 +149,13 @@ body{
     font-family: 'Outfit', sans-serif;
     
 }
+.table{
+    border-bottom: 1px solid black;
+    display: flex;
+    gap: 280px;
+}
+
+
 
 
 
